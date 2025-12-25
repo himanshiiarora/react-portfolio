@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Holtwood+One+SC&family=The+Nautigal:wght@400;700&display=swap');
+
+.contactContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  margin-top: 2em;
+}
+
+/* .section1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 90vw;
+  margin-top: 5em;
+} */
+.connecth2{
+  text-align: left;
+  display: inline-block;
+  margin: 0.5em;
+  font-size: 9em;
+  /* font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal; */
+  /* font-family: "Holtwood One SC", serif; */
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.headerContact{
+  /* margin-left: 10em; */
+  width: 55vw;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-evenly;
+}
+.together{
+  margin-top: -0.2em;
+  margin-left: 0.65em;
+  padding: 0;
+  color: #222;
+}
+
+.work{ 
+  display: inline-block;
+  font-family: "The Nautigal", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+  margin-bottom: -0.5em;
+  color: #054a46;
+}
+.lets{
+  display: inline-block;
+  color: #222;
+}
+/* ---------------------------------- */
+
+.headerIcon{
+  width: 2em;
+  margin-right: 1em;
+}
+.headerpara{
+  font-size: 1.2em;
+  width: 20vw;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.headerpara:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 700;
+  /* transform: scale(1.2); */
+}
+.linkedin, .github, .codepen, .email{
+text-decoration: none;
+color: #444;
+}
+.footerNote{
+  color: #444;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  margin: 0 auto;
+  margin-top: 1em;
+  text-align: center;
+}
+.meContactimg{
+  width: 28em;
+  /* margin-top: 2em; */
+  margin-left: 15rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #054a46; /*rgb(5, 74, 70) */
+}
+/* .backToTop{
+  margin-top: 8em;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #054a46;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.backToTop:hover{
+  background-color: #033734;
+} */
+.footerLine{
+  width: 85vw;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #000;
+  color: #000;
+  border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small responsive tweak: reduce card padding on narrow screens */
+@media (max-width: 880px){
+  .card,
+  .contact-col {
+    padding: .85rem;
+  }
+}
+@media (max-width: 600px){
+  .card,
+  .contact-col {
+    padding: .75rem;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,91 @@
+.skillSec {
+  text-align: center;
+  /* overflow: hidden; */
+  position: relative;
+  margin: 0 auto;
+  /* border: 2px solid #000; */
+}
+.slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  /* top: 30%; */
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 40s linear infinite;
+
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(360deg);
+  }
+}
+.skillHead {
+  font-size: 20em;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  color: #054a46;
+}
+.skillHead::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 1;
+    -webkit-text-stroke: 5px #011312;
+    color: transparent;
+}
+
+.skillData {
+  font-size: 1.5em;
+  margin-left: 40em;
+  text-align: justify;
+  width: 35em;
+  margin-top: 35vh;
+  color: #444;
+}
+.infoBox {
+    /* margin: 0 auto; */
+    /* padding: 2em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1em;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform:
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(600px)
+    translateY(-55px);
+    z-index: 0;
+     font-family: "Holtwood One SC", serif;
+
+}
+.skillName {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.skillImg {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    /* margin-top: -1.1em; */
+    border-radius: 6em;
+    border: 2px double #fff;
+    background-color: #fff;
+    /* padding: 0.2em; */
+}
