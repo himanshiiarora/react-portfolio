@@ -13,10 +13,10 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 1,
-              backgroundImage: "url(src/assets/images/htmlbg.jpeg)",
+              backgroundImage: "url(/images/htmlbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/html5.png" className="skillImg" />
+            <img src="/images/html5.png" className="skillImg" />
             <p className="skillName" >HTML5</p>
           </div>
           <div
