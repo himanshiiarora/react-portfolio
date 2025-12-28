@@ -2,6 +2,13 @@ import React, { useLayoutEffect } from "react";
 import "../CSS/Contact.css";
 import { gsap, SplitText, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import linkedIn from "../assets/images/contactLogos/linkedin-logo.png";
+import github from "../assets/images/contactLogos/github-logo.png";
+import codepen from "../assets/images/contactLogos/codepen-logo.png";
+import mailbox from "../assets/images/contactLogos/mailbox.png";
+import phoneCall from "../assets/images/contactLogos/phone-call.png";
+import arrowCircleUp from "../assets/images/contactLogos/arrow-circle-up.png";
+import myImage from "../assets/images/LinkedInPhoto.jpg";
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
 function ContactSec() {
@@ -55,7 +62,7 @@ function ContactSec() {
                 <p className="headerpara">
                   <img
                     className="headerIcon"
-                    src="src\assets\images\contactLogos\linkedin-logo.png"
+                    src={linkedIn}
                     alt="linkedin icon"
                   />
                   <a
@@ -70,7 +77,7 @@ function ContactSec() {
                 <p className="headerpara">
                   <img
                     className="headerIcon"
-                    src="src\assets\images\contactLogos\github-logo.png"
+                    src={github}
                     alt="github icon"
                   />
                   <a
@@ -86,7 +93,7 @@ function ContactSec() {
                   {/* Using a placeholder for the icon */}
                   <img
                     className="headerIcon"
-                    src="src\assets\images\contactLogos\codepen-logo.png"
+                    src={codepen}
                     alt="codepen icon"
                   />
                   <a
@@ -103,7 +110,7 @@ function ContactSec() {
                 <p className="headerpara">
                   <img
                     className="headerIcon"
-                    src="src\assets\images\contactLogos\mailbox.png"
+                    src={mailbox}
                     alt="email icon"
                   />
                   <a
@@ -113,7 +120,7 @@ function ContactSec() {
                 <p className="headerpara">
                   <img
                     className="headerIcon"
-                    src="src\assets\images\contactLogos\phone-call.png"
+                    src={phoneCall}
                     alt="phone icon"
                   />
                   <span>+91 9852618000</span>
@@ -126,7 +133,7 @@ function ContactSec() {
                 >
                 <img
                   className="headerIcon"
-                  src="src\assets\images\contactLogos\arrow-circle-up.png"
+                  src={arrowCircleUp}
                   alt="arrow"
                 />
                   <span>Back to Top</span>
@@ -138,7 +145,7 @@ function ContactSec() {
             <div className="me">
               <img
                 className="meContactimg"
-                src="src\assets\images\LinkedInPhoto.jpg"
+                src={myImage}
                 alt="contact img"
               />
             </div>
