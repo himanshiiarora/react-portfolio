@@ -154,3 +154,75 @@ body {
   line-height: 1.8em;
   color: #444;
 }
+/* ---- Media Queries for Responsiveness ---- */
+
+/* Tablets (e.g., iPads) */
+@media (max-width: 1200px) {
+
+  .name {
+    font-size: clamp(2rem, 7vw, 4rem);
+  }
+
+  .designation {
+    font-size: 1.3rem;
+  }
+
+  .aboutMe {
+    font-size: 1.1em;
+  }
+  .navigation{
+    font-size: 0.8em;
+    padding-bottom: 0;
+  }
+}
+
+/* Mobile Screens(e.g., larger smartphones) */
+@media (max-width: 767px) {
+  .introSection {
+    padding: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .designation {
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    margin-top: 1.5rem;
+  }
+
+  .aboutMe {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+}
+
+/* Small Mobile Screens (e.g., smaller smartphones) */
+@media (max-width: 480px) {
+  .introSection {
+    padding: 1rem;
+  }
+  .name {
+    font-size: clamp(1.8rem, 12vw, 2.5rem);
+    margin-top: 0.5em;
+  }
+
+  .designation {
+    margin-top: 3em;
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+
+  .aboutMe {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .navigation{
+    font-size: 1em;
+  }
+}

@@ -49,10 +49,10 @@ function AchievementSec() {
           <div className="achievement" id="achBox4">
             <div className="achieveTitle">
               <h3 className="achNumber">04</h3>
-              <h3> Oracle Cloud Infrastructure 2025 AI Foundations Associate (1Z0-1122-25)</h3>
+              <h3> Oracle OCI Certificate</h3>
             </div>
             <div className="achContent">
-              Completed the Oracle OCI AI Foundations Associate certification,
+              Completed the Oracle Cloud Infrastructure 2025 AI Foundations Associate (1Z0-1122-25) certification,
               gaining strong foundational knowledge of AI concepts, machine
               learning workflows, and OCI AI services. Developed an
               understanding of building, deploying, and managing AI-driven
@@ -63,10 +63,10 @@ function AchievementSec() {
           <div className="achievement" id="achBox5">
             <div className="achieveTitle">
               <h3 className="achNumber">05</h3>
-              <h3>Oracle Data Platform 2025 Associate (1Z0-1195-25)</h3>
+              <h3>Oracle DP Certificate</h3>
             </div>
             <div className="achContent">
-              Completed the Oracle Data Platform Associate certification,
+              Completed the Oracle Data Platform 2025 Associate (1Z0-1195-25) certification,
               building strong proficiency in data ingestion, integration, and
               analytics across Oracle’s data ecosystem. Gained hands-on
               understanding of designing secure, scalable data pipelines and

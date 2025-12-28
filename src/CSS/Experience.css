@@ -1,5 +1,5 @@
 .experienceSec {
-  height: 140vh;
+  height: max-content;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -55,13 +55,12 @@
   width: 45vw;
   height: 60vh;
 }
-.orgName{
+.orgName {
   margin: 0;
   padding: 0 2em 0 2em;
   color: #222;
-
 }
-.roleDesc{
+.roleDesc {
   margin: 0;
   border-radius: 1em;
   padding: 0 2em 2em 2em;
@@ -73,7 +72,7 @@
   letter-spacing: 0.3em;
   font-weight: 600;
   color: #054a46;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 .orgHead {
   font-size: 5em;
@@ -131,4 +130,178 @@
   box-shadow: 0 0 20px #444;
   /* display: grid; */
   font-weight: 700;
+}
+
+/* --- Responsive Styles for Experience Section --- */
+
+/* Tablets */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .experienceSec {
+    grid-template-columns: 1fr 2fr; 
+    height: auto;
+    /* height: 140vh; */
+  }
+  .experienceHead {
+    font-size: 3em;
+    width: 50vw;
+    margin-top: 4em;
+    /* margin-left: -1em; */
+  }
+  .experience {
+    margin-right: 2em;
+    /* margin-left: -10em; */
+  }
+  .bdo,
+  .hsbc {
+    width: 60vw;
+  }
+  .hsbc {
+    margin-left: 20vw;
+  }
+  .orgHead {
+    font-size: 2.5em;
+  }
+  .companyRole {
+    font-size: 1.5em;
+  }
+  .duration {
+    font-size: 1.2em;
+  }
+  .description {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .initial,
+  .second,
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  .experienceSec {
+    display: flex;
+    flex-direction: column;
+  }
+  .experienceHead {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 3em;
+  }
+  .experience {
+    margin: 0;
+    /* height: 120vh; */
+    width: 100%;
+    border: none;
+  }
+  .bdo,
+  .hsbc {
+    width: 90%;
+    margin: 1em auto;
+    text-align: left; /* Unify alignment */
+  }
+
+  .orgHead {
+    font-size: 2.5em;
+  }
+  .companyRole {
+    font-size: 1.5em;
+  }
+  .duration {
+    font-size: 1.2em;
+  }
+  .description {
+    font-size: 1.1em;
+    max-width: 100%;
+  }
+
+  .initial,
+  .second {
+    /* Reposition animation containers for the new layout */
+    width: 100px;
+    height: 100px;
+  }
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+  .initial {
+    left: 85%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+  .second {
+    left: 85%;
+    top: 58%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .experienceSec {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .experienceHead {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin:0;
+    font-size: 3em;
+    height: auto;
+  }
+  .experience {
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+  .bdo,
+  .hsbc {
+    text-align: center; /* Unify alignment */
+    height: 80vh;
+  }
+  .orgName{
+    margin-bottom: 1em;
+  }
+
+  .orgHead {
+    font-size:1.8em;
+    text-align: center;
+  }
+  .companyRole {
+    font-size: 1.2em;
+  }
+  .duration {
+    font-size: 1em;
+  }
+  .description {
+    font-size: 1em;
+    max-width: 100%;
+  }
+  .box {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px #444;
+    border-radius: 10%;
+  }
+  .initial, .second {
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50%);
+  }
+  .initial{
+    top: 7.5%;
+    left: 88%;
+  }
+  .second{
+    top: 100%;
+    left: 12%;
+  }
 }
