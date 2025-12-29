@@ -20,6 +20,27 @@ import maven from "../assets/images/maven.png";
 import linux from "../assets/images/linux.jpeg";
 import github from "../assets/images/git.png";
 import material from "../assets/images/material.png";
+import htmlbg from "../assets/images/htmlbg.jpeg";
+import cssbg from "../assets/images/cssbg.jpeg";
+import sassbg from "../assets/images/sassbg.jpeg";
+import bootstrapbg from "../assets/images/bootstrapbg.jpeg";
+import figmabg from "../assets/images/figmabg.jpeg";
+import gsapbg from "../assets/images/gsapbg.jpeg";
+import javascriptbg from "../assets/images/javascriptbg.jpeg";
+import typescriptbg from "../assets/images/typescriptbg.jpeg";
+import reactbg from "../assets/images/reactbg.jpeg";
+import angularbg from "../assets/images/angularbg.jpeg";
+import javabg from "../assets/images/javabg.jpeg";
+import restassuredbg from "../assets/images/restassuredbg.jpeg";
+import gherkinbg from "../assets/images/gherkinbg.jpeg";
+import appiumbg from "../assets/images/appiumbg.jpeg";
+import dockerbg from "../assets/images/dockerbg.jpeg";
+import jenkinsbg from "../assets/images/jenkinsbg.jpeg";
+import mavenbg from "../assets/images/mavenbg.jpeg";
+import linuxbg from "../assets/images/linuxbg.jpeg";  
+import githubbg from "../assets/images/gitbg.jpeg";
+import materialbg from "../assets/images/materialbg.jpeg";
+
  
 function SkillSec() {
   return (
@@ -33,7 +54,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 1,
-              backgroundImage: "url(/images/htmlbg.jpeg)",
+              "backgroundImage": `url(${htmlbg})`,
             }}
           >
             <img src={html5} className="skillImg" />
@@ -43,7 +64,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 2,
-              backgroundImage: "url(src/assets/images/cssbg.jpeg)",
+              backgroundImage: `url(${cssbg})`,
             }}
           >
             <img src={css3} className="skillImg" />
@@ -53,7 +74,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 3,
-              backgroundImage: "url(src/assets/images/sassbg.jpeg)",
+              backgroundImage: `url(${sassbg})`,
             }}
           >
             <img src={sass} className="skillImg" />
@@ -63,7 +84,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 4,
-              backgroundImage: "url(src/assets/images/bootstrapbg.jpeg)",
+              backgroundImage: `url(${bootstrapbg})`,
             }}
           >
             <img src={bootstrap} className="skillImg" />
@@ -73,7 +94,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 5,
-              backgroundImage: "url(src/assets/images/figmabg.jpeg)",
+              backgroundImage: `url(${figmabg})`,
             }}
           >
             <img src={figma} className="skillImg" />
@@ -83,7 +104,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 6,
-              backgroundImage: "url(src/assets/images/gsapbg.jpeg)",
+              backgroundImage: `url(${gsapbg})`,
             }}
           >
             <img src={gsap} className="skillImg" />
@@ -93,7 +114,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 7,
-              backgroundImage: "url(src/assets/images/javascriptbg.jpeg)",
+              backgroundImage: `url(${javascriptbg})`,
             }}
           >
           <img src={javascript} className="skillImg" />
@@ -103,7 +124,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 8,
-              backgroundImage: "url(src/assets/images/typescriptbg.jpeg)",
+              backgroundImage: `url(${typescriptbg})`,
             }}
           >
             <img src={typescript} className="skillImg" />
@@ -114,7 +135,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 9,
-              backgroundImage: "url(src/assets/images/reactbg.jpeg)",
+              backgroundImage: `url(${reactbg})`,
             }}
           >
             <img src={react} className="skillImg" />
@@ -124,7 +145,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 10,
-              backgroundImage: "url(src/assets/images/angularbg.jpeg)",
+              backgroundImage: `url(${angularbg})`,
             }}
           >
             <img src={angular} className="skillImg" />
@@ -134,7 +155,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 11,
-              backgroundImage: "url(src/assets/images/javabg.jpeg)",
+              backgroundImage: `url(${javabg})`,
             }}
           >
             <img src={java} className="skillImg" />
@@ -144,7 +165,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 12,
-              backgroundImage: "url(src/assets/images/restassuredbg.jpeg)",
+              backgroundImage: `url(${restassuredbg})`,
             }}
           >
             <img src={restassured} className="skillImg" />
@@ -154,7 +175,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 13,
-              backgroundImage: "url(src/assets/images/gherkinbg.jpeg)",
+              backgroundImage: `url(${gherkinbg})`,
             }}
           >
             <img src={gherkin} className="skillImg" />
@@ -165,7 +186,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 14,
-              backgroundImage: "url(src/assets/images/appiumbg.jpeg)",
+              backgroundImage: `url(${appiumbg})`,
             }}
           >
             <img src={appium} className="skillImg" />
@@ -175,7 +196,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 15,
-              backgroundImage: "url(src/assets/images/dockerbg.jpeg)",
+              backgroundImage: `url(${dockerbg})`,
             }}
           >
             <img src={docker} className="skillImg" />
@@ -185,7 +206,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 16,
-              backgroundImage: "url(src/assets/images/jenkinsbg.jpeg)",
+              backgroundImage: `url(${jenkinsbg})`,
             }}
           >
             <img src={jenkins} className="skillImg" />
@@ -195,7 +216,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 17,
-              backgroundImage: "url(src/assets/images/mavenbg.jpeg)",
+              backgroundImage: `url(${mavenbg})`,
             }}
           >
             <img src={maven} className="skillImg" />
@@ -205,7 +226,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 18,
-              backgroundImage: "url(src/assets/images/linuxbg.jpeg)",
+              backgroundImage: `url(${linuxbg})`,
             }}
           >
             <img src={linux} className="skillImg" />
@@ -215,7 +236,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 19,
-              backgroundImage: "url(src/assets/images/gitbg.jpeg)",
+              backgroundImage: `url(${githubbg})`,
             }}
           >
             <img src={github} className="skillImg" />
@@ -225,7 +246,7 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 20,
-              backgroundImage: "url(src/assets/images/materialbg.jpeg)",
+              backgroundImage: `url(${materialbg})`,
             }}
           >
             <img src={material} className="skillImg" />
