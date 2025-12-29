@@ -1,5 +1,25 @@
 import React from "react";
 import "../CSS/Skill.css";
+import html5 from "../assets/images/html5.png";
+import css3 from "../assets/images/css3.png";
+import sass from "../assets/images/sass.png";
+import bootstrap from "../assets/images/bootstrap.jpeg";
+import figma from "../assets/images/figma.png";
+import gsap from "../assets/images/gsap.png";
+import javascript from "../assets/images/javascript.jpeg";
+import typescript from "../assets/images/typescript.png";
+import react from "../assets/images/react.png";
+import angular from "../assets/images/angular.png";
+import java from "../assets/images/java.png";
+import restassured from "../assets/images/restassured.png";
+import gherkin from "../assets/images/gherkin.png";
+import appium from "../assets/images/appium.png";
+import docker from "../assets/images/docker.png";
+import jenkins from "../assets/images/jenkins.png";
+import maven from "../assets/images/maven.png";
+import linux from "../assets/images/linux.jpeg";
+import github from "../assets/images/git.png";
+import material from "../assets/images/material.png";
  
 function SkillSec() {
   return (
@@ -16,7 +36,7 @@ function SkillSec() {
               backgroundImage: "url(/images/htmlbg.jpeg)",
             }}
           >
-            <img src="/images/html5.png" className="skillImg" />
+            <img src={html5} className="skillImg" />
             <p className="skillName" >HTML5</p>
           </div>
           <div
@@ -26,7 +46,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/cssbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/css3.png" className="skillImg" />
+            <img src={css3} className="skillImg" />
             <p className="skillName">CSS3</p>
           </div>
           <div
@@ -36,7 +56,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/sassbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/sass.png" className="skillImg" />
+            <img src={sass} className="skillImg" />
             <p className="skillName">SASS</p>
           </div>
           <div
@@ -46,7 +66,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/bootstrapbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/bootstrap.jpeg" className="skillImg" />
+            <img src={bootstrap} className="skillImg" />
             <p className="skillName">Bootstrap</p>
           </div>
           <div
@@ -56,7 +76,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/figmabg.jpeg)",
             }}
           >
-            <img src="src/assets/images/figma.png" className="skillImg" />
+            <img src={figma} className="skillImg" />
             <p className="skillName">Figma</p>
           </div>
           <div
@@ -66,7 +86,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/gsapbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/gsap.png" className="skillImg" />
+            <img src={gsap} className="skillImg" />
             <p className="skillName">GSAP</p>
           </div>
           <div
@@ -76,7 +96,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/javascriptbg.jpeg)",
             }}
           >
-          <img src="src/assets/images/javascript.jpeg" className="skillImg" />
+          <img src={javascript} className="skillImg" />
             <p className="skillName">JavaScript</p>
           </div>
           <div
@@ -86,7 +106,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/typescriptbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/typescript.png" className="skillImg" />
+            <img src={typescript} className="skillImg" />
             <p className="skillName">TypeScript</p>
           </div>
 
@@ -97,7 +117,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/reactbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/react.png" className="skillImg" />
+            <img src={react} className="skillImg" />
             <p className="skillName">React</p>
           </div>
           <div
@@ -107,7 +127,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/angularbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/angular.png" className="skillImg" />
+            <img src={angular} className="skillImg" />
             <p className="skillName">Angular</p>
           </div>
           <div
@@ -117,7 +137,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/javabg.jpeg)",
             }}
           >
-            <img src="src/assets/images/java.png" className="skillImg" />
+            <img src={java} className="skillImg" />
             <p className="skillName">Java</p>
           </div>
           <div
@@ -127,7 +147,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/restassuredbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/restassured.png" className="skillImg" />
+            <img src={restassured} className="skillImg" />
             <p className="skillName">REST</p>
           </div>
           <div
@@ -137,7 +157,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/gherkinbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/gherkin.png" className="skillImg" />
+            <img src={gherkin} className="skillImg" />
             <p className="skillName">Gherkin</p>
           </div>
 
@@ -148,7 +168,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/appiumbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/appium.png" className="skillImg" />
+            <img src={appium} className="skillImg" />
             <p className="skillName">Appium</p>
           </div>
           <div
@@ -158,7 +178,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/dockerbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/docker.png" className="skillImg" />
+            <img src={docker} className="skillImg" />
             <p className="skillName">Docker</p>
           </div>
           <div
@@ -168,7 +188,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/jenkinsbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/jenkins.png" className="skillImg" />
+            <img src={jenkins} className="skillImg" />
             <p className="skillName">Jenkins</p>
           </div>
           <div
@@ -178,7 +198,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/mavenbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/maven.png" className="skillImg" />
+            <img src={maven} className="skillImg" />
             <p className="skillName">Maven</p>
           </div>
           <div
@@ -188,7 +208,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/linuxbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/linux.jpeg" className="skillImg" />
+            <img src={linux} className="skillImg" />
             <p className="skillName">Linux</p>
           </div>
           <div
@@ -198,7 +218,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/gitbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/git.png" className="skillImg" />
+            <img src={github} className="skillImg" />
             <p className="skillName">Git</p>
           </div>
           <div
@@ -208,7 +228,7 @@ function SkillSec() {
               backgroundImage: "url(src/assets/images/materialbg.jpeg)",
             }}
           >
-            <img src="src/assets/images/material.png" className="skillImg" />
+            <img src={material} className="skillImg" />
             <p className="skillName">Material UI</p>
           </div>
 
