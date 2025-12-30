@@ -18,7 +18,7 @@
   margin-left: 1.6em;
   margin-top: 8em;
   margin-bottom: 5em;
-  font-size: 5.5em;
+  font-size: 4em;
   padding: 0;
   color: #000;
 }
@@ -79,24 +79,26 @@
   justify-content: center;
   align-items: center;
   width: 85%;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 0.2em;
   font-weight: 600;
   color: #054a46;
   text-transform: uppercase;
 }
 .achNumber {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   font-weight: 700;
   margin-right: 1em;
   border-radius: 50%;
   background: linear-gradient(135deg, #054a46, #000);
   color: #fff;
   padding: 0.5em;
+  text-align: center;
+  align-items: center;
 }
 .achContent {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-align: justify;
   padding: 1em;
   margin: 1em;

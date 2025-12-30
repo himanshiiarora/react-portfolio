@@ -1,5 +1,46 @@
 import React from "react";
 import "../CSS/Skill.css";
+import html5 from "../assets/images/html5.png";
+import css3 from "../assets/images/css3.png";
+import sass from "../assets/images/sass.png";
+import bootstrap from "../assets/images/bootstrap.jpeg";
+import figma from "../assets/images/figma.png";
+import gsap from "../assets/images/gsap.png";
+import javascript from "../assets/images/javascript.jpeg";
+import typescript from "../assets/images/typescript.png";
+import react from "../assets/images/react.png";
+import angular from "../assets/images/angular.png";
+import java from "../assets/images/java.png";
+import restassured from "../assets/images/restassured.png";
+import gherkin from "../assets/images/gherkin.png";
+import appium from "../assets/images/appium.png";
+import docker from "../assets/images/docker.png";
+import jenkins from "../assets/images/jenkins.png";
+import maven from "../assets/images/maven.png";
+import linux from "../assets/images/linux.jpeg";
+import github from "../assets/images/git.png";
+import material from "../assets/images/material.png";
+import htmlbg from "../assets/images/htmlbg.jpeg";
+import cssbg from "../assets/images/cssbg.jpeg";
+import sassbg from "../assets/images/sassbg.jpeg";
+import bootstrapbg from "../assets/images/bootstrapbg.jpeg";
+import figmabg from "../assets/images/figmabg.jpeg";
+import gsapbg from "../assets/images/gsapbg.jpeg";
+import javascriptbg from "../assets/images/javascriptbg.jpeg";
+import typescriptbg from "../assets/images/typescriptbg.jpeg";
+import reactbg from "../assets/images/reactbg.jpeg";
+import angularbg from "../assets/images/angularbg.jpeg";
+import javabg from "../assets/images/javabg.jpeg";
+import restassuredbg from "../assets/images/restassuredbg.jpeg";
+import gherkinbg from "../assets/images/gherkinbg.jpeg";
+import appiumbg from "../assets/images/appiumbg.jpeg";
+import dockerbg from "../assets/images/dockerbg.jpeg";
+import jenkinsbg from "../assets/images/jenkinsbg.jpeg";
+import mavenbg from "../assets/images/mavenbg.jpeg";
+import linuxbg from "../assets/images/linuxbg.jpeg";  
+import githubbg from "../assets/images/gitbg.jpeg";
+import materialbg from "../assets/images/materialbg.jpeg";
+
  
 function SkillSec() {
   return (
@@ -13,80 +54,80 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 1,
-              backgroundImage: "url(/images/htmlbg.jpeg)",
+              "backgroundImage": `url(${htmlbg})`,
             }}
           >
-            <img src="/images/html5.png" className="skillImg" />
+            <img src={html5} className="skillImg" />
             <p className="skillName" >HTML5</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 2,
-              backgroundImage: "url(src/assets/images/cssbg.jpeg)",
+              backgroundImage: `url(${cssbg})`,
             }}
           >
-            <img src="src/assets/images/css3.png" className="skillImg" />
+            <img src={css3} className="skillImg" />
             <p className="skillName">CSS3</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 3,
-              backgroundImage: "url(src/assets/images/sassbg.jpeg)",
+              backgroundImage: `url(${sassbg})`,
             }}
           >
-            <img src="src/assets/images/sass.png" className="skillImg" />
+            <img src={sass} className="skillImg" />
             <p className="skillName">SASS</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 4,
-              backgroundImage: "url(src/assets/images/bootstrapbg.jpeg)",
+              backgroundImage: `url(${bootstrapbg})`,
             }}
           >
-            <img src="src/assets/images/bootstrap.jpeg" className="skillImg" />
+            <img src={bootstrap} className="skillImg" />
             <p className="skillName">Bootstrap</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 5,
-              backgroundImage: "url(src/assets/images/figmabg.jpeg)",
+              backgroundImage: `url(${figmabg})`,
             }}
           >
-            <img src="src/assets/images/figma.png" className="skillImg" />
+            <img src={figma} className="skillImg" />
             <p className="skillName">Figma</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 6,
-              backgroundImage: "url(src/assets/images/gsapbg.jpeg)",
+              backgroundImage: `url(${gsapbg})`,
             }}
           >
-            <img src="src/assets/images/gsap.png" className="skillImg" />
+            <img src={gsap} className="skillImg" />
             <p className="skillName">GSAP</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 7,
-              backgroundImage: "url(src/assets/images/javascriptbg.jpeg)",
+              backgroundImage: `url(${javascriptbg})`,
             }}
           >
-          <img src="src/assets/images/javascript.jpeg" className="skillImg" />
+          <img src={javascript} className="skillImg" />
             <p className="skillName">JavaScript</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 8,
-              backgroundImage: "url(src/assets/images/typescriptbg.jpeg)",
+              backgroundImage: `url(${typescriptbg})`,
             }}
           >
-            <img src="src/assets/images/typescript.png" className="skillImg" />
+            <img src={typescript} className="skillImg" />
             <p className="skillName">TypeScript</p>
           </div>
 
@@ -94,50 +135,50 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 9,
-              backgroundImage: "url(src/assets/images/reactbg.jpeg)",
+              backgroundImage: `url(${reactbg})`,
             }}
           >
-            <img src="src/assets/images/react.png" className="skillImg" />
+            <img src={react} className="skillImg" />
             <p className="skillName">React</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 10,
-              backgroundImage: "url(src/assets/images/angularbg.jpeg)",
+              backgroundImage: `url(${angularbg})`,
             }}
           >
-            <img src="src/assets/images/angular.png" className="skillImg" />
+            <img src={angular} className="skillImg" />
             <p className="skillName">Angular</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 11,
-              backgroundImage: "url(src/assets/images/javabg.jpeg)",
+              backgroundImage: `url(${javabg})`,
             }}
           >
-            <img src="src/assets/images/java.png" className="skillImg" />
+            <img src={java} className="skillImg" />
             <p className="skillName">Java</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 12,
-              backgroundImage: "url(src/assets/images/restassuredbg.jpeg)",
+              backgroundImage: `url(${restassuredbg})`,
             }}
           >
-            <img src="src/assets/images/restassured.png" className="skillImg" />
+            <img src={restassured} className="skillImg" />
             <p className="skillName">REST</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 13,
-              backgroundImage: "url(src/assets/images/gherkinbg.jpeg)",
+              backgroundImage: `url(${gherkinbg})`,
             }}
           >
-            <img src="src/assets/images/gherkin.png" className="skillImg" />
+            <img src={gherkin} className="skillImg" />
             <p className="skillName">Gherkin</p>
           </div>
 
@@ -145,70 +186,70 @@ function SkillSec() {
             className="infoBox"
             style={{
               "--position": 14,
-              backgroundImage: "url(src/assets/images/appiumbg.jpeg)",
+              backgroundImage: `url(${appiumbg})`,
             }}
           >
-            <img src="src/assets/images/appium.png" className="skillImg" />
+            <img src={appium} className="skillImg" />
             <p className="skillName">Appium</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 15,
-              backgroundImage: "url(src/assets/images/dockerbg.jpeg)",
+              backgroundImage: `url(${dockerbg})`,
             }}
           >
-            <img src="src/assets/images/docker.png" className="skillImg" />
+            <img src={docker} className="skillImg" />
             <p className="skillName">Docker</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 16,
-              backgroundImage: "url(src/assets/images/jenkinsbg.jpeg)",
+              backgroundImage: `url(${jenkinsbg})`,
             }}
           >
-            <img src="src/assets/images/jenkins.png" className="skillImg" />
+            <img src={jenkins} className="skillImg" />
             <p className="skillName">Jenkins</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 17,
-              backgroundImage: "url(src/assets/images/mavenbg.jpeg)",
+              backgroundImage: `url(${mavenbg})`,
             }}
           >
-            <img src="src/assets/images/maven.png" className="skillImg" />
+            <img src={maven} className="skillImg" />
             <p className="skillName">Maven</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 18,
-              backgroundImage: "url(src/assets/images/linuxbg.jpeg)",
+              backgroundImage: `url(${linuxbg})`,
             }}
           >
-            <img src="src/assets/images/linux.jpeg" className="skillImg" />
+            <img src={linux} className="skillImg" />
             <p className="skillName">Linux</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 19,
-              backgroundImage: "url(src/assets/images/gitbg.jpeg)",
+              backgroundImage: `url(${githubbg})`,
             }}
           >
-            <img src="src/assets/images/git.png" className="skillImg" />
+            <img src={github} className="skillImg" />
             <p className="skillName">Git</p>
           </div>
           <div
             className="infoBox"
             style={{
               "--position": 20,
-              backgroundImage: "url(src/assets/images/materialbg.jpeg)",
+              backgroundImage: `url(${materialbg})`,
             }}
           >
-            <img src="src/assets/images/material.png" className="skillImg" />
+            <img src={material} className="skillImg" />
             <p className="skillName">Material UI</p>
           </div>
 
