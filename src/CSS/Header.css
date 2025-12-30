@@ -68,7 +68,7 @@ body {
   overflow-y: auto;
 }
 .introSection{
-  max-width: 1200px;
+  max-width: 920px;
   width: 90%;
   padding: 2rem;
   display: flex;
@@ -82,7 +82,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.5em;
+  font-size: 1.1em;
   position: fixed;
   top: 0;
   left: 0;
@@ -108,8 +108,8 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
-  border-bottom-left-radius: 1.6rem;
-  border-bottom-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
 }
 .navLinks:hover{
   color: #054a46;
@@ -124,33 +124,33 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 .greeting {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #666;
   margin-bottom: 0.5rem;
 }
 .name{
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(2rem, 3.9vw, 5rem);
   font-weight: 800;
   margin: 0;
   line-height: 1.1;
   color: #222;
 }
 .designation{
-  font-size: 1.5rem;
-  letter-spacing: 0.3em;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
   font-weight: 600;
   color: #054a46;
-  margin: 2rem 0 -1rem 0;
+  margin: 1.5rem 0 -1rem 0;
   text-transform: uppercase
 }
 .aboutMe{
   max-width: 1200px;
   text-align: justify;
-  font-size: 1.5em;
-  line-height: 1.8em;
+  font-size: 1.2em;
+  line-height: 1.6em;
   color: #444;
 }

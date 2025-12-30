@@ -21,7 +21,7 @@
   text-align: left;
   display: inline-block;
   margin: 0.5em;
-  font-size: 9em;
+  font-size: 6.5em;
   /* font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal; */
@@ -66,7 +66,7 @@
   margin-right: 1em;
 }
 .headerpara{
-  font-size: 1.2em;
+  font-size: 0.9em;
   width: 20vw;
   color: #444;
   display: flex;
@@ -85,16 +85,16 @@ color: #444;
 }
 .footerNote{
   color: #444;
-  font-size: 1em;
+  font-size: 0.7em;
   letter-spacing: 0.05em;
   margin: 0 auto;
   margin-top: 1em;
   text-align: center;
 }
 .meContactimg{
-  width: 28em;
+  width: 21em;
   /* margin-top: 2em; */
-  margin-left: 15rem;
+  margin-left: 11rem;
   border-radius: 50%;
   box-shadow: 0 0 10px #054a46; /*rgb(5, 74, 70) */
 }
