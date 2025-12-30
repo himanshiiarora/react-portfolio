@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Holtwood+One+SC&family=The+Nautigal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Holtwood+One+SC&family=The+Nautigal:wght@400;700&display=swap");
 
-.contactContent{
+.contactContent {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,7 +17,7 @@
   width: 90vw;
   margin-top: 5em;
 } */
-.connecth2{
+.connecth2 {
   text-align: left;
   display: inline-block;
   margin: 0.5em;
@@ -26,11 +26,11 @@
   font-weight: 700;
   font-style: normal; */
   /* font-family: "Holtwood One SC", serif; */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: normal;
 }
-.headerContact{
+.headerContact {
   /* margin-left: 10em; */
   width: 55vw;
   padding: 2em;
@@ -39,14 +39,14 @@
   align-items: top;
   justify-content: space-evenly;
 }
-.together{
+.together {
   margin-top: -0.2em;
   margin-left: 0.65em;
   padding: 0;
   color: #222;
 }
 
-.work{ 
+.work {
   display: inline-block;
   font-family: "The Nautigal", cursive;
   font-weight: 700;
@@ -55,13 +55,13 @@
   margin-bottom: -0.5em;
   color: #054a46;
 }
-.lets{
+.lets {
   display: inline-block;
   color: #222;
 }
 /* ---------------------------------- */
 
-.headerIcon{
+.headerIcon {
   width: 2em;
   margin-right: 1em;
 }
@@ -73,17 +73,20 @@
   align-items: center;
 }
 
-.headerpara:hover{
+.headerpara:hover {
   cursor: pointer;
   transition: 0.3s;
   font-weight: 700;
   /* transform: scale(1.2); */
 }
-.linkedin, .github, .codepen, .email{
-text-decoration: none;
-color: #444;
+.linkedin,
+.github,
+.codepen,
+.email {
+  text-decoration: none;
+  color: #444;
 }
-.footerNote{
+.footerNote {
   color: #444;
   font-size: 0.7em;
   letter-spacing: 0.05em;
@@ -112,38 +115,131 @@ color: #444;
 .backToTop:hover{
   background-color: #033734;
 } */
-.footerLine{
+.footerLine {
   width: 85vw;
   margin: 0 auto;
   height: 1px;
   background-color: #000;
   color: #000;
   border: none;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small responsive tweak: reduce card padding on narrow screens */
-@media (max-width: 880px){
+@media (max-width: 880px) {
   .card,
   .contact-col {
-    padding: .85rem;
+    padding: 0.85rem;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .card,
   .contact-col {
-    padding: .75rem;
+    padding: 0.75rem;
     border-radius: 8px;
+  }
+}
+
+/* Responsiveness for headerContact */
+
+/* Large desktops */
+@media (min-width: 1201px) {
+  .headerContact {
+    width: 55vw;
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .headerpara {
+    font-size: 1.2em;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1200px) and (min-width: 768px) {
+  /* .contactmeSec {
+    height: auto;
+  } */
+  .headerContact {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5em;
+  }
+  .headerpara {
+    font-size: 1em;
+    width: auto;
+  }
+  .connecth2 {
+    font-size: 7em;
+  }
+  .meContactimg {
+    width: 20em;
+    margin-left: 5rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  .contactmeSec {
+    height: auto;
+  }
+  .contactContent {
+    flex-direction: column;
+  }
+  .headerContact {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 1em;
+  }
+  .siteLinks,
+  .getInTouch {
+    width: 150px;
+  }
+  .getInTouch {
+    margin-top: -0.8em;
+  }
+  .headerpara {
+    font-size: 1em;
+    width: 100%;
+    justify-content: flex-start;
+    /* margin-bottom: 1em; */
+  }
+  .connecth2 {
+    font-size: 5em;
+    text-align: center;
+  }
+  .meContactimg {
+    width: 15em;
+    margin: 2em 0 2em 0;
+  }
+  .work {
+    font-size: 1.5em;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .contactmeSec {
+    height: 90vh;
+  }
+  .headerContact {
+    padding: 0.5em;
+  }
+  .headerpara {
+    font-size: 0.9em;
+  }
+  .connecth2 {
+    font-size: 3.5em;
+    margin-left: 0;
+  }
+  .work {
+    font-size: 1.2em;
+  }
+  .meContactimg {
+    width: 12em;
+  }
+  .together{
+    margin-left: 0;
   }
 }
