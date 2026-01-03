@@ -13,6 +13,30 @@ function PortfolioHeader() {
   const rightCurtainRef = useRef(null);
   const workContentRef = useRef(null);
   const [activeLink, setActiveLink] = useState("landing-page");
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const navigationRef = useRef(null);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navigationRef.current && !navigationRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -90,97 +114,127 @@ function PortfolioHeader() {
 
   return (
     <>
-      <div className={`navigation ${activeLink === "landing-page" ? "nav-hidden" : ""}`}>
-        <a
-          className={`navLinks ${activeLink === "home" ? "active" : ""}`}
-          href="#home"
-        >
-          Home
-        </a>
-        <a
-          className={`navLinks ${activeLink === "experience" ? "active" : ""}`}
-          href="#experience"
-        >
-          Work Experience
-        </a>
-        <a
-          className={`navLinks ${activeLink === "skills" ? "active" : ""}`}
-          href="#skills"
-        >
-          Skills
-        </a>
-        <a
-          className={`navLinks ${activeLink === "achievements" ? "active" : ""}`}
-          href="#achievements"
-        >
-          Achievements
-        </a>
-        <a
-          className={`navLinks ${activeLink === "contact" ? "active" : ""}`}
-          href="#contact"
-        >
-          Contact
-        </a>
-      </div>
-     {/*Main Container (Pinned)*/}
-    <div
-      ref={containerRef}
-      className="headerContainer"
-    >
-      {/* --- PageHeader / Curtains Layer (Z-Index High) --- */}
       <div
-        className="curtainsLayer"
-        id="landing-page"
+        ref={navigationRef}
+        className={`navigation ${activeLink === "landing-page" ? "nav-hidden" : ""}`}
       >
-        {/* Left Curtain (para) */}
-        <div ref={leftCurtainRef} className="para">
-          {/* Huge Typography for Left Curtain */}
-          <h1 className="mainH1">HIMA</h1>
-        </div>
-
-        {/* Right Curtain (second half) */}
-        <div ref={rightCurtainRef} className="secondHalf">
-          {/* Huge Typography for Right Curtain */}
-          <h1
-            className="mainH1 nshiText"
+        <div className="nav-links-desktop">
+          <a
+            className={`navLinks ${activeLink === "home" ? "active" : ""}`}
+            href="#home"
           >
-            NSHI
-          </h1>
+            Home
+          </a>
+          <a
+            className={`navLinks ${activeLink === "experience" ? "active" : ""}`}
+            href="#experience"
+          >
+            Work Experience
+          </a>
+          <a
+            className={`navLinks ${activeLink === "skills" ? "active" : ""}`}
+            href="#skills"
+          >
+            Skills
+          </a>
+          <a
+            className={`navLinks ${activeLink === "achievements" ? "active" : ""}`}
+            href="#achievements"
+          >
+            Achievements
+          </a>
+          <a
+            className={`navLinks ${activeLink === "contact" ? "active" : ""}`}
+            href="#contact"
+          >
+            Contact
+          </a>
+        </div>
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+        <div className={`nav-links-mobile ${isMenuOpen ? "open" : ""}`}>
+          <a
+            className={`navLinks ${activeLink === "home" ? "active" : ""}`}
+            href="#home"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </a>
+          <a
+            className={`navLinks ${activeLink === "experience" ? "active" : ""}`}
+            href="#experience"
+            onClick={() => setMenuOpen(false)}
+          >
+            Work Experience
+          </a>
+          <a
+            className={`navLinks ${activeLink === "skills" ? "active" : ""}`}
+            href="#skills"
+            onClick={() => setMenuOpen(false)}
+          >
+            Skills
+          </a>
+          <a
+            className={`navLinks ${activeLink === "achievements" ? "active" : ""}`}
+            href="#achievements"
+            onClick={() => setMenuOpen(false)}
+          >
+            Achievements
+          </a>
+          <a
+            className={`navLinks ${activeLink === "contact" ? "active" : ""}`}
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </a>
         </div>
       </div>
+      {/*Main Container (Pinned)*/}
+      <div ref={containerRef} className="headerContainer">
+        {/* --- PageHeader / Curtains Layer (Z-Index High) --- */}
+        <div className="curtainsLayer" id="landing-page">
+          {/* Left Curtain (para) */}
+          <div ref={leftCurtainRef} className="para">
+            {/* Huge Typography for Left Curtain */}
+            <h1 className="mainH1">HIMA</h1>
+          </div>
 
-      {/* --- Work Experience Layer (Z-Index Low / Behind) --- */}
-      <div
-        ref={workContentRef}
-        className="aboutLayer"
-      >
-        {/* Your Intro section*/}
-        <div className="introSection" id="home" >
+          {/* Right Curtain (second half) */}
+          <div ref={rightCurtainRef} className="secondHalf">
+            {/* Huge Typography for Right Curtain */}
+            <h1 className="mainH1 nshiText">NSHI</h1>
+          </div>
+        </div>
 
-          {/* Hero Text Section */}
-          <div className="introDetails">
-            <h2
-              className="greeting"
-            >
-              Hi, I am
-            </h2>
+        {/* --- Work Experience Layer (Z-Index Low / Behind) --- */}
+        <div ref={workContentRef} className="aboutLayer">
+          {/* Your Intro section*/}
+          <div className="introSection" id="home">
+            {/* Hero Text Section */}
+            <div className="introDetails">
+              <h2 className="greeting">Hi, I am</h2>
 
-            <h1 className="name">HIMANSHI ARORA</h1>
+              <h1 className="name">HIMANSHI ARORA</h1>
 
-            <h3 className="designation">FRONT END DEVELOPER</h3>
+              <h3 className="designation">FRONT END DEVELOPER</h3>
 
-            <p className="aboutMe">
-              I am a Software Engineer specializing in modern frontend
-              development with Angular and performance-driven web architectures.
-              Backed by strong experience in automation, API design, and cloud
-              fundamentals, I build resilient, scalable systems that balance
-              user experience with technical excellence. Actively involved in
-              innovation, problem-solving, and continuous learning.
-            </p>
+              <p className="aboutMe">
+                I am a Software Engineer specializing in modern frontend
+                development with Angular and performance-driven web
+                architectures. Backed by strong experience in automation, API
+                design, and cloud fundamentals, I build resilient, scalable
+                systems that balance user experience with technical excellence.
+                Actively involved in innovation, problem-solving, and
+                continuous learning.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
