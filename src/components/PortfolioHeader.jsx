@@ -223,7 +223,7 @@ function PortfolioHeader() {
               <h3 className="designation">FRONT END DEVELOPER</h3>
 
               <p className="aboutMe">
-                I am a Software Engineer specializing in modern frontend
+                I am a Frontend Developer specializing in modern frontend
                 development with Angular and performance-driven web
                 architectures. Backed by strong experience in automation, API
                 design, and cloud fundamentals, I build resilient, scalable
