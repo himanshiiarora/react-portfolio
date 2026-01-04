@@ -275,6 +275,9 @@
   /* .achieveSec {
     height: auto;
   } */
+   .achievementBox {
+    margin: 0 auto;
+  }
   .achNumber {
     width: 2.5rem;
     height: 2.5rem;
@@ -295,19 +298,19 @@
     height: 60vh;
   }
   #achBox1 {
-    top: 24%;
-  }
-  #achBox2 {
     top: 26%;
   }
-  #achBox3 {
+  #achBox2 {
     top: 28%;
   }
-  #achBox4 {
+  #achBox3 {
     top: 30%;
   }
-  #achBox5 {
+  #achBox4 {
     top: 32%;
+  }
+  #achBox5 {
+    top: 34%;
   }
   .achieveTitle {
     font-size: 0.9em;
