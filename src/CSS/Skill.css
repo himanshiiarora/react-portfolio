@@ -162,9 +162,9 @@
 
 /* Small mobile screens */
 @media (max-width: 480px) {
-  /* .skillSec {
-    height: 90vh;
-  } */
+  .skillSec {
+    height: 95vh;
+  }
   .skillHead {
     font-size: 4em;
     top: 4%;

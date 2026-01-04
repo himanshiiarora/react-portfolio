@@ -262,7 +262,7 @@
 /* Small mobile screens */
 @media (max-width: 480px) {
   .experienceSec {
-    height: 170vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
   }
@@ -319,7 +319,7 @@
     left: 91%;
   }
   .second {
-    top: 80%;
+    top: 65%;
     left: 12%;
   }
 }
