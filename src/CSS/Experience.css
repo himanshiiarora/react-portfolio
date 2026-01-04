@@ -1,5 +1,5 @@
 .experienceSec {
-  height: max-content;
+  height: 140vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -138,8 +138,8 @@
 /* Tablets */
 @media (max-width: 1200px) and (min-width: 768px) {
   .experienceSec {
-    grid-template-columns: 1fr 2fr; 
-    height: auto;
+    grid-template-columns: 1fr 2fr;
+    height: 150vh;
     /* height: 140vh; */
   }
   .experienceHead {
@@ -179,6 +179,14 @@
     width: 100px;
     height: 100px;
   }
+  .initial {
+    left: 85%;
+    top: 25%;
+  }
+  .second {
+    left: 0%;
+    top: 95%;
+  }
 }
 
 /* Mobile Screens */
@@ -186,25 +194,33 @@
   .experienceSec {
     display: flex;
     flex-direction: column;
+    height: 160vh;
   }
   .experienceHead {
-    position: static;
+    /* position: static; */
     transform: none;
     text-align: center;
-    margin: 1em 0;
+    margin: 0 auto;
     font-size: 3em;
+    width: 85vw;
+    margin-top: 0;
+    margin-bottom: -2em;
   }
   .experience {
-    margin: 0;
+    margin: 0 auto;
     /* height: 120vh; */
     width: 100%;
     border: none;
   }
-  .bdo,
-  .hsbc {
-    width: 90%;
-    margin: 1em auto;
+  .bdo {
+    width: 100%;
+    margin: 0 auto;
     text-align: left; /* Unify alignment */
+  }
+  .hsbc {
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
   }
 
   .orgHead {
@@ -232,13 +248,13 @@
     height: 50px;
   }
   .initial {
-    left: 85%;
-    top: 5%;
+    left: 90%;
+    top: 2%;
     transform: translateX(-50%);
   }
   .second {
-    left: 85%;
-    top: 58%;
+    left: 25%;
+    top: 75%;
     transform: translateX(-50%);
   }
 }
@@ -246,16 +262,17 @@
 /* Small mobile screens */
 @media (max-width: 480px) {
   .experienceSec {
-    height: max-content;
+    height: 170vh;
     display: flex;
     flex-direction: column;
   }
   .experienceHead {
-    position: static;
+    /* position: static; */
     transform: none;
     text-align: center;
-    margin:0;
-    font-size: 3em;
+    margin: 0 auto;
+    font-size: 2em;
+    width: 85vw;
     height: auto;
   }
   .experience {
@@ -268,12 +285,12 @@
     text-align: center; /* Unify alignment */
     height: 80vh;
   }
-  .orgName{
+  .orgName {
     margin-bottom: 1em;
   }
 
   .orgHead {
-    font-size:1.8em;
+    font-size: 1.8em;
     text-align: center;
   }
   .companyRole {
@@ -287,22 +304,22 @@
     max-width: 100%;
   }
   .box {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     box-shadow: 0 0 10px #444;
-    border-radius: 10%;
   }
-  .initial, .second {
-    width: 50px;
-    height: 50px;
+  .initial,
+  .second {
+    width: 30px;
+    height: 30px;
     transform: translateX(-50%);
   }
-  .initial{
-    top: 7.5%;
-    left: 88%;
+  .initial {
+    top: 5%;
+    left: 91%;
   }
-  .second{
-    top: 100%;
+  .second {
+    top: 80%;
     left: 12%;
   }
 }
