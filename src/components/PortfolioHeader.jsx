@@ -22,7 +22,10 @@ function PortfolioHeader() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navigationRef.current && !navigationRef.current.contains(event.target)) {
+      if (
+        navigationRef.current &&
+        !navigationRef.current.contains(event.target)
+      ) {
         setMenuOpen(false);
       }
     };
@@ -42,17 +45,18 @@ function PortfolioHeader() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      
+
       // Determine if we are in the landing page (curtains) or home (intro) phase
       // The header is pinned for 150% of viewport height.
       // We set a threshold to switch from 'landing-page' to 'home' as the curtains open.
-      const homeThreshold = windowHeight * 0.8; 
+      const homeThreshold = windowHeight * 0.8;
 
-      let currentSection = scrollPosition < homeThreshold ? "landing-page" : "home";
+      let currentSection =
+        scrollPosition < homeThreshold ? "landing-page" : "home";
 
       const sections = ["experience", "skills", "achievements", "contact"];
-      
-      sections.forEach((section) => { 
+
+      sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop;
@@ -116,7 +120,9 @@ function PortfolioHeader() {
     <>
       <div
         ref={navigationRef}
-        className={`navigation ${activeLink === "landing-page" ? "nav-hidden" : ""}`}
+        className={`navigation ${
+          activeLink === "landing-page" ? "nav-hidden" : ""
+        }`}
       >
         <div className="nav-links-desktop">
           <a
@@ -126,7 +132,9 @@ function PortfolioHeader() {
             Home
           </a>
           <a
-            className={`navLinks ${activeLink === "experience" ? "active" : ""}`}
+            className={`navLinks ${
+              activeLink === "experience" ? "active" : ""
+            }`}
             href="#experience"
           >
             Work Experience
@@ -138,7 +146,9 @@ function PortfolioHeader() {
             Skills
           </a>
           <a
-            className={`navLinks ${activeLink === "achievements" ? "active" : ""}`}
+            className={`navLinks ${
+              activeLink === "achievements" ? "active" : ""
+            }`}
             href="#achievements"
           >
             Achievements
@@ -164,7 +174,9 @@ function PortfolioHeader() {
             Home
           </a>
           <a
-            className={`navLinks ${activeLink === "experience" ? "active" : ""}`}
+            className={`navLinks ${
+              activeLink === "experience" ? "active" : ""
+            }`}
             href="#experience"
             onClick={() => setMenuOpen(false)}
           >
@@ -178,7 +190,9 @@ function PortfolioHeader() {
             Skills
           </a>
           <a
-            className={`navLinks ${activeLink === "achievements" ? "active" : ""}`}
+            className={`navLinks ${
+              activeLink === "achievements" ? "active" : ""
+            }`}
             href="#achievements"
             onClick={() => setMenuOpen(false)}
           >
@@ -220,16 +234,16 @@ function PortfolioHeader() {
 
               <h1 className="name">HIMANSHI ARORA</h1>
 
-              <h3 className="designation">FRONT END DEVELOPER</h3>
+              <h3 className="designation">SOFTWARE DEVELOPER</h3>
 
               <p className="aboutMe">
-                I am a Frontend Developer specializing in modern frontend
-                development with Angular and performance-driven web
-                architectures. Backed by strong experience in automation, API
-                design, and cloud fundamentals, I build resilient, scalable
-                systems that balance user experience with technical excellence.
-                Actively involved in innovation, problem-solving, and
-                continuous learning.
+                Software Developer exhibiting 3 years of experience specializing
+                development in modern frontend frameworks and libraries like
+                Angular, React along with performance-driven web architectures.
+                Backed by strong experience in API Design, automation, and cloud
+                fundamentals, I build resilient, scalable systems that balance
+                user experience with technical excellence. Actively involved in
+                innovation, problem-solving, and continuous learning..
               </p>
             </div>
           </div>
