@@ -93,7 +93,7 @@ function ExperienceSec() {
               className="roleDesc"
               style={{ boxShadow: "-4px 5px 10px rgba(5, 74, 70, 0.2)" }}
             >
-              <h4 className="companyRole">Software Developer</h4>
+              <h4 className="companyRole">Software Engineer</h4>
               <div className="description">
                 Built scalable, user-centric web applications with a focus on
                 usability, accessibility, and performance. Created reusable UI

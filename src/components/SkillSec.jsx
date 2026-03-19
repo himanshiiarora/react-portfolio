@@ -256,7 +256,7 @@ function SkillSec() {
           
         </div>
         <div className="skillData">
-          Software Developer specializing in frontend development with Angular,
+          Software Engineer specializing in frontend development with Angular,
           JavaScript, TypeScript, and React complemented by strong experience in
           backend and API automation. <br />
           Skilled in building scalable, data-driven applications, optimizing

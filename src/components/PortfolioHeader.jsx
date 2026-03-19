@@ -234,16 +234,16 @@ function PortfolioHeader() {
 
               <h1 className="name">HIMANSHI ARORA</h1>
 
-              <h3 className="designation">SOFTWARE DEVELOPER</h3>
+              <h3 className="designation">SOFTWARE Engineer</h3>
 
               <p className="aboutMe">
-                Software Developer exhibiting 3 years of experience specializing
+                Software Engineer exhibiting 3 years of experience specializing
                 development in modern frontend frameworks and libraries like
                 Angular, React along with performance-driven web architectures.
                 Backed by strong experience in API Design, automation, and cloud
                 fundamentals, I build resilient, scalable systems that balance
                 user experience with technical excellence. Actively involved in
-                innovation, problem-solving, and continuous learning..
+                innovation, problem-solving, and continuous learning.
               </p>
             </div>
           </div>
